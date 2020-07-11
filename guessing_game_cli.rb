@@ -1,4 +1,4 @@
-# Code your solution here!
+require 'pry'
 def run_guessing_game
   num=rand(6)+1
   
@@ -8,6 +8,7 @@ def run_guessing_game
   elsif guess== "exit"
     puts "Goodbye!"
   else 
+    binding.pry
     puts "Sorry! The computer guessed #{num}."
   end 
 end 
